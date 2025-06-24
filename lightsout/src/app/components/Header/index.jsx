@@ -10,7 +10,7 @@ export function Header() {
       <div class="flex justify-between items-center px-16">
           
           <div class="flex pl-16">
-            <Image src={logo} alt="logo" class="w-32 h-16" />
+            <Image src={logo} alt="logo" className="w-32 h-16" />
           </div>
           
           <div class="w-1/2">

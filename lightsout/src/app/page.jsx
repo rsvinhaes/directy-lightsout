@@ -3,7 +3,6 @@
 import { Header } from "../app/components/header"
 import Image from "next/image"
 import Link from "next/link"
-// import "./page.module.css"
 import React from 'react'
 
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -70,107 +69,107 @@ export default function Home() {
         <h1>PRINCIPAIS DESTINOS</h1>
       </div>
            
-      <section className=" w-screen flex justify-evenly py-16 px-4" >        
-          <div className={styles.sectionDestinoPraia} >
+      <section class="w-screen flex justify-evenly py-16 px-4" >        
+          <div class="w-98 flex flex-col bg-[#FAFAFA] p-4 rounded-lg border-[#171717] " >
             
             <div>
-              <div className={styles.sectionDestinoCardTitulo} >
-                <h3 >PRAIAS</h3>
+              <div class="text-center p-4" >
+                <h3 class="pt-4">PRAIAS</h3>
               </div>
               <div>
-                <Image src={praia} height={256} className={styles.sectionDestinoImg} alt="foto praia" />
+                <Image src={praia} class="w-full block" alt="foto praia" />
               </div>
             </div>
             
             <div>
               <div>
-                <p>
+                <p class="pt-4 indent-8" >
                   O Espírito Santo possui múltiplas riquezas naturais de norte a sul de seu território. As opções variam de mar à montanha, das águas turvas dos manguezais às águas cristalinas das lagoas, de serras antigas cobertas por matas inexploradas a pontões rochosos, entre outros vários chamarizes que, em cada região do Estado, possuem características paisagísticas singulares que dão ao turista vastas possibilidades de apreciar e interagir com a natureza.
                 </p>
               </div>
               <div>
-                <h3>
+                <h3 class="pt-4" >
                   Muitas opções: escolha a sua
                 </h3>
               </div>
               <div>
-                <p>
+                <p class="pt-4 indent-8" >
                   Com cerca de 410 quilômetros de extensão, o litoral do Espírito Santo tem os mais diversos tipos de praia, com dunas, desertas, semidesertas, com enseadas, com águas mornas e cristalinas e também com areia monazítica, muito utilizada para o uso medicinal.
                 </p>
               </div>
               <div>
-                <p>
+                <p class="pt-4 indent-8" >
                 A região metropolitana abriga praias como Guarapari, Curva da Jurema, Camburi, da Costa, Itapoã, Coqueiral de Itaparica, Jacaraípe e Manguinhos. Já a capital do Espírito Santo, Vitória, possui 105 quilômetros de praias.
                 </p>
               </div>
             </div>
           </div>
 
-          <div className={styles.sectionDestinoEcoturismo} >
+          <div class="w-98 flex flex-col bg-[#FAFAFA] p-4 rounded-lg border-[#171717] " >
             
             <div>
-              <div className={styles.sectionDestinoCardTitulo} >
-                <h3>ECOTURISMO</h3>
+              <div class="text-center p-4" >
+                <h3 class="pt-4" >ECOTURISMO</h3>
               </div>
               <div>
-                <Image src={eco} height={256} className={styles.sectionDestinoImg} alt="foto eco" />
+                <Image src={eco} class="w-full block" alt="foto eco" />
               </div>
             </div>
             
             <div>
               <div>
-                <p>
+                <p class="pt-4 indent-8" >
                   O Espírito Santo possui múltiplas riquezas naturais de norte a sul de seu território. As opções variam de mar à montanha, das águas turvas dos manguezais às cristalinas das lagoas, de serras antigas cobertas por matas inexploradas a pontões rochosos, entre outros vários chamarizes que, em cada região do Estado, possuem características paisagísticas singulares que dão ao turista vastas possibilidades de apreciar a natureza.
                   No Sul do Estado, encontramos um dos grandes patrimônios naturais do Brasil: o Parque Nacional do Caparaó, que abriga o Pico da Bandeira, terceiro mais alto do país, com 2.890 metros de altitude.
                 </p>
               </div>
               <div>
-                <h3>
+                <h3 class="pt-4">
                   Saíra Apunhalada
                 </h3>
               </div>
               <div>
-                <p>
+                <p class="pt-4 indent-8" >
                   Na região das montanhas capixabas está localizado o Parque Estadual de Pedra Azul, em Domingos Martins, passeio obrigatório para quem curte uma boa caminhada ecológica, contemplando a beleza do local, que ainda pode ser apreciada através da cavalgada até suas piscinas naturais.
                  </p>
               </div>
               <div>
-                <p>
+                <p class="pt-4 indent-8" >
                   Também na região, no entorno da cidade de Vargem Alta, uma ave que se acreditava estar extinta foi encontrada. A Saíra Apunhalada tem pouco mais de dez centímetros, porém uma enorme importância para a preservação da mata da região, sendo uma das atrações de turistas praticantes de observação de aves.
                 </p>
               </div>
             </div>
           </div>
 
-        <div className={styles.sectionDestinoAgroturismo} >
+        <div class="w-98 flex flex-col bg-[#FAFAFA] p-4 rounded-lg border-[#171717]" >
              
              <div>
-              <div className={styles.sectionDestinoCardTitulo} >
-                <h3>AGROTURISMO</h3>
+              <div class="text-center p-4" >
+                <h3 class="pt-4" >AGROTURISMO</h3>
               </div>
               <div>
-                <Image src={agro} height={256} className={styles.sectionDestinoImg} alt="foto agro" />
+                <Image src={agro} class="w-full block" alt="foto agro" />
               </div>
             </div>
              
             <div>
               <div>
-                <p>
+                <p class="pt-4 indent-8" >
                   A Região das Montanhas Capixabas é referência nacional no desenvolvimento do agroturismo, destacando-se o município de Venda Nova do Imigrante, premiado pelo Ministério do Turismo devido seu pioneirismo no setor, em 2006, quando recebeu o título de Capital Nacional do Agroturismo.
                 </p>
               </div>
               <div>
-                <h3>
+                <h3  class="pt-4" >
                   Turismo de Experiência
                 </h3>
               </div>
               <div>
-                <p>
+                <p class="pt-4 indent-8" >
                   Na região das montanhas capixabas está localizado o Parque Estadual de Pedra Azul, em Domingos Martins, passeio obrigatório para quem curte uma boa caminhada ecológica, contemplando a beleza do local, que ainda pode ser apreciada através da cavalgada até suas piscinas naturais.
                  </p>
               </div>
               <div>
-                <p>
+                <p class="pt-4 indent-8" >
                   Também na região, no entorno da cidade de Vargem Alta, uma ave que se acreditava estar extinta foi encontrada. A Saíra Apunhalada tem pouco mais de dez centímetros, porém uma enorme importância para a preservação da mata da região, sendo uma das atrações de turistas praticantes de observação de aves.
                 </p>
               </div>
@@ -178,12 +177,12 @@ export default function Home() {
         </div>     
       </section>
 
-      <div className={styles.TitulosectionDestino} >
+      <div class="text-center border-b-1 border-b-black pt-16 mx-16" >
         <h1 id="EVENTOS" >CALENDÁRIO DE EVENTOS</h1>
       </div>
 
-      <section className={styles.sectionEventos} >
-        <div className={styles.sectionEventosContainer} >
+      <section class="flex justify-center py-4" >
+        <div class="flex flex-col text-center w-225 p-4 rounded-lg border-[#171717] " >
           
             <div>Festa da Penha, em Vila Velha, sempre na segunda-feira após a Páscoa</div>
             <div>Festival de Jazz & Bossa de Santa Teresa, no final de maio ou começo de junho</div>
