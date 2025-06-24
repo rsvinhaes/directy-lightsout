@@ -1,5 +1,4 @@
 import Link from "next/link"
-import styles from "./header.module.css"
 import Image from "next/image"
 
 import logo from '../../../../public/logoclaro.png'
@@ -7,34 +6,34 @@ import { ModeToggle } from "../Ui/ModeToggle"
 
 export function Header() {
   return (
-    <header className={styles.containerHeader}>
-      <div className={styles.container}>
-          <div className={styles.containerImage}>
-            <Image src={logo} alt="logo" width={192} height={64} />
+    <header class="fixed top-0 right-0 left-0 z-10 w-full bg-[#F3F3F3]" >
+      <div class="flex justify-between items-center px-16">
+          
+          <div class="flex pl-16">
+            <Image src={logo} alt="logo" class="w-32 h-16" />
           </div>
           
-          <nav className={styles.containerNav}>
-              <ul className={styles.containerUl}>
-                <li className={styles.containerLi}>
+          <div class="w-1/2">
+              <div class="flex justify-end items-center">
+                <div className="pl-8">
                   <Link href='#HOME' >
                     HOME
                   </Link>
-                </li>
-                <li className={styles.containerLi}>
+                </div>
+                <div className="pl-8">
                   <Link href='#DESTINO' >
                     PRINCIPAIS DESTINOS
                   </Link>
-                </li>
-                <li className={styles.containerLi}>
+                </div>
+                <div className="pl-8">
                   <Link href='#EVENTOS'>
                     CALENDÁRIO DE EVENTOS
                   </Link>
-                </li>
-              </ul>
-          </nav>
-
-          <div>
-            <ModeToggle />
+                </div>              
+                <div className="pl-8">
+                  <ModeToggle />
+                </div>
+              </div>
           </div>
 
       </div>

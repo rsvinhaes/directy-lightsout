@@ -3,7 +3,7 @@
 import { Header } from "../app/components/header"
 import Image from "next/image"
 import Link from "next/link"
-import styles from "./page.module.css"
+// import "./page.module.css"
 import React from 'react'
 
 import { Swiper, SwiperSlide } from "swiper/react"
@@ -40,12 +40,12 @@ export default function Home() {
   ]
 
   return (
-    <div className={styles.page}>
-      <div className={styles.sectionHeader} >
+    <div class="w-full h-full">
+      <div class=" h-16" >
         <Header />
       </div>
       
-      <div className={styles.sectionHome} >
+      <div class="flex h-[calc(100vh-4rem)] mb-32" >
         <Swiper  
           modules={[Virtual, Pagination, Navigation, EffectFade]}
           spaceBetween={50} loop={true} autoplay={{
@@ -60,17 +60,17 @@ export default function Home() {
        
              {data.map((slideContent, index) => (
              <SwiperSlide key={slideContent} virtualIndex={index}>
-                <Image className={styles.sectionImg} src={slideContent.image} alt="slider" />
+                <Image class="w-full h-full" src={slideContent.image} alt="slider" />
              </SwiperSlide>
              ))}
         </Swiper>
       </div>
 
-      <div id="DESTINO" className={styles.TitulosectionDestino} >
+      <div id="DESTINO" class="text-center border-b-1 border-b-black pt-16 mx-16" >
         <h1>PRINCIPAIS DESTINOS</h1>
       </div>
            
-      <section className={styles.sectionDestino} >        
+      <section className=" w-screen flex justify-evenly py-16 px-4" >        
           <div className={styles.sectionDestinoPraia} >
             
             <div>
