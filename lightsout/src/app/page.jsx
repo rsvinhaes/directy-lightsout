@@ -65,16 +65,16 @@ export default function Home() {
         </Swiper>
       </div>
 
-      <div id="DESTINO" class="text-center border-b-1 border-b-black pt-16 mx-16" >
+      <div id="DESTINO" class="text-center border-b-1 border-b-var(--border) pt-16 mx-16 font-bold text-3xl" >
         <h1>PRINCIPAIS DESTINOS</h1>
       </div>
            
       <section class="w-screen flex justify-evenly py-16 px-4" >        
-          <div class="w-98 flex flex-col bg-[#FAFAFA] p-4 rounded-lg border-[#171717] " >
+          <div class="w-98 flex flex-col bg-[var(--primary)] p-4 rounded-lg border-[#171717] " >
             
             <div>
               <div class="text-center p-4" >
-                <h3 class="pt-4">PRAIAS</h3>
+                <h3 class="pt-4 font-bold text-xl">PRAIAS</h3>
               </div>
               <div>
                 <Image src={praia} class="w-full block" alt="foto praia" />
@@ -88,7 +88,7 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h3 class="pt-4" >
+                <h3 class="pt-4 font-bold text-xl" >
                   Muitas opções: escolha a sua
                 </h3>
               </div>
@@ -105,11 +105,11 @@ export default function Home() {
             </div>
           </div>
 
-          <div class="w-98 flex flex-col bg-[#FAFAFA] p-4 rounded-lg border-[#171717] " >
+          <div class="w-98 flex flex-col bg-[var(--primary)] p-4 rounded-lg border-[#171717] " >
             
             <div>
               <div class="text-center p-4" >
-                <h3 class="pt-4" >ECOTURISMO</h3>
+                <h3 class="pt-4 font-bold text-xl" >ECOTURISMO</h3>
               </div>
               <div>
                 <Image src={eco} class="w-full block" alt="foto eco" />
@@ -124,7 +124,7 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h3 class="pt-4">
+                <h3 class="pt-4 font-bold text-xl">
                   Saíra Apunhalada
                 </h3>
               </div>
@@ -141,11 +141,11 @@ export default function Home() {
             </div>
           </div>
 
-        <div class="w-98 flex flex-col bg-[#FAFAFA] p-4 rounded-lg border-[#171717]" >
+        <div class="w-98 flex flex-col bg-[var(--primary)] p-4 rounded-lg border-[#171717]" >
              
              <div>
               <div class="text-center p-4" >
-                <h3 class="pt-4" >AGROTURISMO</h3>
+                <h3 class="pt-4 font-bold text-xl" >AGROTURISMO</h3>
               </div>
               <div>
                 <Image src={agro} class="w-full block" alt="foto agro" />
@@ -159,7 +159,7 @@ export default function Home() {
                 </p>
               </div>
               <div>
-                <h3  class="pt-4" >
+                <h3 class="pt-4 font-bold text-xl" >
                   Turismo de Experiência
                 </h3>
               </div>
@@ -177,12 +177,12 @@ export default function Home() {
         </div>     
       </section>
 
-      <div class="text-center border-b-1 border-b-black pt-16 mx-16" >
+      <div class="text-center border-b-1 border-b-var(--border) pt-16 mx-16 font-bold text-3xl" >
         <h1 id="EVENTOS" >CALENDÁRIO DE EVENTOS</h1>
       </div>
 
       <section class="flex justify-center py-4" >
-        <div class="flex flex-col text-center w-225 p-4 rounded-lg border-[#171717] " >
+        <div class="flex flex-col text-center bg-[var(--primary)] font-medium w-225 p-4 rounded-lg border-[#171717] " >
           
             <div>Festa da Penha, em Vila Velha, sempre na segunda-feira após a Páscoa</div>
             <div>Festival de Jazz & Bossa de Santa Teresa, no final de maio ou começo de junho</div>
